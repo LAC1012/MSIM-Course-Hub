@@ -19,16 +19,17 @@ The MSIM course hub is designed to centralize course formation that is currently
 
 
 ## Structure
-| Key                  | Value                                                                             |
-| -------------------- | --------------------------------------------------------------------------------- |
-| Course               | IMT 500 Foundations of Information Management                                     |
-| Professor            | Jim Loter                                                                         |
-| Homework Time        | 2 to 4 hours                                                                      |
-| Assignment Types     | Weekly writing, readings, group projects, presentation, final paper               |
-| Career Interests     | UX Design/Research, PM/Consulting, Information Architecture                       |
-| Applicability Rating | 3                                                                                 |
-| Portfolio Project    | No                                                                                |
-| Key Insights         | Engaging professor, real-world assignments, some assignment requirement confusion |
+| Field | Type | Value |
+|------|------|-------------|
+| `msim_class_code` | string | IMT 500 |
+| `msim_class_name` | string | Foundations of Information Management
+| `professor_full_name` | string | Jim Loter |
+| `hw_hours` | string | 2 to 4 hours |
+| `assignment_types` | string | Weekly written assignments below 1000 words (case studies, reflections), Readings, Group projects, Presentation, Final paper (research papers, reports) |
+| `intended_field` | string | UX Design or UX Research, Product/Program Management and Consulting, Information Architecture |
+| `career_relevance_score` | number | 3 |
+| `portfolio_project_created` | boolean | No |
+| `additional_insights` | string | There were some miscommunication about assignment requirements because the professor was a guest lecturer or was teaching another professor's material. Professor's knowledge was great and teaching style was very engaging. Weekly written assignments were interesting because they directly apply the learning materials to a real-world case, but got repetitive near the end. |
 
 ## Example
 ```
