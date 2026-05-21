@@ -1,4 +1,7 @@
 # MSIM-Course-Hub
+
+Link to repo: https://github.com/LAC1012/MSIM-Course-Hub
+
 ## About
 The MSIM course hub is designed to centralize course formation that is currently scattered across platforms such as MyPlan, iSchool course directory, and time schedules that get updated quarterly. Its target audience is current MSIM students who need reliable, consistent access to course details and peer reviews when planning their academic path. Insights on workload, homework, career relevance, and overall course sentiment are consolidated into a simple website that displays data scraped from the MSIM course catalog alongside student survey responses, with the information stored in a CSV file.
 
