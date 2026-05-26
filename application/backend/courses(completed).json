@@ -1,0 +1,407 @@
+[
+  {
+    "course_id": "IMT 500",
+    "course_title": "Foundations of Information Management",
+    "credits": "4",
+    "description": "Examines the role and function of information and information management in individual, organizational, community, and social contexts. Topics include defining information and information management concepts; overview of systems and systems architecture, methods of managing information and information flows within organizations; and internal and external communication in professional settings.",
+    "course_type": "Core",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 511",
+    "course_title": "Introduction to Programming for Information and Data Science",
+    "credits": "4",
+    "description": "Introduces fundamentals of computer programming as used for data science. Covers foundational skills necessary for writing stand-alone computer scripts, including programming syntax, data structuring, and procedural definition (functions). Includes programming tools and environments (e.g., command-line). Emphasizes skills in language syntax, debugging, algorithmic thinking, and data comprehension. Assumes no previous programming background. Course equivalent to: LIS 511.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 519",
+    "course_title": "Information Science Study Abroad",
+    "credits": "1-8, max. 18",
+    "description": "International seminar, led by Information School faculty or researchers. Each addresses a specialized area of information studies. Topics vary. Some seminars may require language proficiency. See the UW Study Abroad website for information on specific offerings in any given year. Course equivalent to: LIS 519.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 521",
+    "course_title": "Artificial Intelligence Foundations",
+    "credits": "4",
+    "description": "Introduces technical foundations and critical perspectives on artificial intelligence (AI), including neural architectures, learning methods, and computational principles. Examines AI's societal and organizational impacts, ethical frameworks, and philosophical questions of intelligence and creativity. Emphasizes responsible AI, fairness, and transparency across generative and traditional AI approaches.",
+    "course_type": "Specialization",
+    "specialization": ["AI"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 522",
+    "course_title": "Governing Artificial Intelligence: Managing Change, Risk, and Innovation",
+    "credits": "4",
+    "description": "Focuses on balancing the business value of AI with mitigating associated risks. Students develop expertise in conducting risks assessments and designing governance structures. While not technically focused, course connects AI's mathematical foundations to practical governance implications, preparing students to make informed decisions about AI adoption and risk management.",
+    "course_type": "Specialization",
+    "specialization": ["AI"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 523",
+    "course_title": "Implementing and Managing Generative Artificial Intelligence Systems",
+    "credits": "4",
+    "description": "Teaches students to design, implement, and manage human-centered generative AI systems within organizations. Students explore use cases and implementation strategies, applying responsible AI principles. Students create proof-of-concept applications to apply these skills using low-code development tools.",
+    "course_type": "Specialization",
+    "specialization": ["AI"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 526",
+    "course_title": "Building and Applying Large Language Models",
+    "credits": "4",
+    "description": "Introduces the building blocks of large language models (LLMs) using theories and practice. Primarily covers foundational models and technical elements of LLMs through hands-on exercises and problems, while also covering the potential social impacts of particular technical decisions and approaches. Prerequisite: IMT 573 and IMT 574.",
+    "course_type": "Specialization",
+    "specialization": ["AI"],
+    "prerequisites": ["IMT 573", "IMT 574"]
+  },
+  {
+    "course_id": "IMT 530",
+    "course_title": "Organization of Information Resources",
+    "credits": "4",
+    "description": "Introduction to issues in organization of information and information objects including analysis of intellectual and physical characteristics of information objects; use of metadata and metadata standards for information systems; theory of classification, including semantic relationships and facet analysis; creation of controlled vocabularies; and display and arrangement.",
+    "course_type": "Specialization",
+    "specialization": ["IA"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 535",
+    "course_title": "Introduction to Information Architecture",
+    "credits": "5",
+    "description": "Introduces concepts and methods of front- and back-end information architecture. Covers back-end topics including data and content modeling, taxonomy, controlled vocabulary, SEO, search, and analytics. Covers front-end topics including design thinking, design process, design patterns, navigation, workflow, labeling, orientation, and information scent. Unifies front- and back-end IA.",
+    "course_type": "Specialization",
+    "specialization": ["IA"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 540",
+    "course_title": "Design Methods for Interactive Systems",
+    "credits": "4",
+    "description": "Introduction to the theory and practice of user-centered design. Examines design methods for identifying and describing user needs, specifying and prototyping new systems, and evaluating the usability of systems. Examines design methodologies such as contextual design and value-sensitive design, giving specific emphasis to human-information interaction. Prerequisite: permission of instructor.",
+    "course_type": "Specialization",
+    "specialization": ["UX"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 541",
+    "course_title": "Enterprise Information Systems Analysis and Design",
+    "credits": "4",
+    "description": "Uses Systems Development Lifecycle (SDLC) as a methodology for addressing complex enterprise information systems problems. Through each phase of SDLC, students engage in current and future state analysis and design activities, including, project identification, selection and initiation, baseline project planning, feasibility and risk analysis, requirements gathering and structuring, system development, implementation, and maintenance strategies.",
+    "course_type": "Specialization",
+    "specialization": ["PPMC"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 542",
+    "course_title": "Portable Information Structures",
+    "credits": "4",
+    "description": "Introduces the concepts and methods used to analyze, store, manage, and present information and navigation. Equal weight given to understanding structures and implementing them. Topics covered include information analysis and organizational methods as well as markup standards (e.g., JSON, XML) and metadata concepts and application.",
+    "course_type": "Specialization",
+    "specialization": ["IA"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 543",
+    "course_title": "Relational Database Management Systems",
+    "credits": "4",
+    "description": "Introduces relational database design, implementation, and management, with a focus on using relational database management systems (DBMS) to manage data in an organization. Topics include: data modeling tools and techniques, conceptual and logical database design, physical implementation, SQL, data management, and database administration. Course equivalent to: LIS 543.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 546",
+    "course_title": "Data Communications and Networking",
+    "credits": "4",
+    "description": "Covers local and wide-area computer networking including topologies and hardware, packet switching, client/server architectures, network protocols, and network servers and applications. Also addresses server operating systems, management, security, authentication, and policy issues associated with distributed networks.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 547",
+    "course_title": "Social Media Data Mining and Analysis",
+    "credits": "4",
+    "description": "Explores techniques for collecting and analyzing social media. Students gain direct experience with methods for collecting a social media corpus, defining features of activity that are relevant for analysis, and analyzing those features.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 550",
+    "course_title": "Policy and Ethics in Information Management",
+    "credits": "4",
+    "description": "Explores a range of information issues in the social and organizational context of information professionals, including professional ethics, privacy, freedom of expression, and intellectual property. Gives students tools for analysis of the kinds of social and ethical issues that will arise in their future lives as information professionals.",
+    "course_type": "Core",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 555",
+    "course_title": "Foundations of Cybersecurity",
+    "credits": "4",
+    "description": "Examines information security challenges and solutions, which information management professionals contend with when providing technology services and applications based on premises and cloud platforms. Students solidify the terminology and security architecture via hands-on labs using open source and cloud-based tools. Security topics selected from industry-standard frameworks.",
+    "course_type": "Specialization",
+    "specialization": ["InfoSec"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 558",
+    "course_title": "Leading and Managing Enterprise Information Security",
+    "credits": "4",
+    "description": "Examines the elements of managing and leading enterprise information security programs from a leadership perspective. Students review real world scenarios and explore challenges facing information security leaders. Develop an information security plan and program that meets the culture and goals of a company to address the challenging threat environment.",
+    "course_type": "Specialization",
+    "specialization": ["InfoSec"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 559",
+    "course_title": "Cybersecurity Functions and Trends",
+    "credits": "4",
+    "description": "Presents and analyzes cybersecurity technologies from a technical leadership stance to prepare information management professionals who will lead cybersecurity technical projects and information security teams. Introduces contemporary cybersecurity topics such as data analytics, digital forensic methodologies and cybersecurity applied in IoT (Internet of Things) and SDN (Software Defined Networks).",
+    "course_type": "Specialization",
+    "specialization": ["InfoSec"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 561",
+    "course_title": "Data Visualization: Design and Development",
+    "credits": "4",
+    "description": "Introduction to human-centered design, development, and evaluation of data visualizations. Coursework focuses on techniques for designing and coding visualizations of structured data, including evaluating usability and accessibility. Topics include principles of visual perception; fundamentals of visual analytics; technical dimensions of visual encoding; prototyping; and usability testing.",
+    "course_type": "Specialization",
+    "specialization": ["UX"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 563",
+    "course_title": "Advanced Relational Database Management Systems",
+    "credits": "4",
+    "description": "Conducts deeper investigation into construction of high-volume, robust database systems from conception through deployment. Topics include Enhanced ERDs, explicit transaction-management (control-of-flow, error-handling), coded business rules, troubleshooting and optimization. Investigation of disaster recovery, security, high-availability and scalability solutions as well as NoSQL and data warehousing topics. Prerequisite: IMT 543 or LIS 543.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": ["IMT 543"]
+  },
+  {
+    "course_id": "IMT 565",
+    "course_title": "Designing Information Experiences",
+    "credits": "4",
+    "description": "Explores experience design including user experience, customer experience, and service design. Covers the philosophical foundations of experience, how to design and evaluate experiences, and the business aspects of customer experience. The focus is on experiences of and with information.",
+    "course_type": "Specialization",
+    "specialization": ["UX"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 569",
+    "course_title": "Capstone I: Project Preparation",
+    "credits": "1",
+    "description": "Preparation for implementing a capstone project. Topics include choosing a project, team formation, professional communication with a project sponsor, identifying the scope of the project, assessing feasibility, developing a project charter and sponsor agreement. Prerequisite: completion of all MSIM core courses. Credit/no-credit only.",
+    "course_type": "Culminating Experience",
+    "specialization": [],
+    "prerequisites": ["IMT 500", "IMT 550", "IMT 570", "IMT 580"]
+  },
+  {
+    "course_id": "IMT 570",
+    "course_title": "Data Driven Organizational Problem Solving for Information Management Professionals",
+    "credits": "4",
+    "description": "Provides students with analytical skills and a systematic approach to solve complex problems related to information management in organizations. Using an applied project, students are introduced to problem solving methods and a variety of data gathering and analysis techniques, culminating in the development of effective, data driven, recommendations specific to information management, systems, and product development.",
+    "course_type": "Core",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 571",
+    "course_title": "Social Network Analysis",
+    "credits": "4",
+    "description": "Provide students with an understanding of the fundamental concepts, common methods, and analytical tools of social network analysis. Student will gain experience applying both exploratory and inferential methods to real-world problems with in the social network domain.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 572",
+    "course_title": "Introduction to Data Science",
+    "credits": "4",
+    "description": "Introduces a broad, non-technical overview of key concepts, skills, and technologies used in \"data science\". Provides a high-level introduction to common data science pipelines, such as experimental design, data collection and storage, basic analytics, machine learning, and data visualization, focusing on analyzing in real-world datasets using industry standard statistical packages. Course equivalent to: LIS 572.",
+    "course_type": "Specialization",
+    "specialization": ["BI"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 573",
+    "course_title": "Data Science I: Theoretical Foundations",
+    "credits": "4",
+    "description": "Introduces technically focused theoretical foundations of \"Data Science.\" Provides an overview of key concepts, focusing on foundational concepts such as exploratory data analysis and statistical inference. Assignments are data-intensive, and require significant programming and statistical analysis. Students are expected to have college-level statistics and programming experience (R and python preferred). Prerequisite: either QMETH 201, IMT 570, or equivalent college coursework; and either CSE 121, CSE 122, CSE 123, CSE 142, or equivalent college coursework.",
+    "course_type": "Specialization",
+    "specialization": ["DS"],
+    "prerequisites": ["IMT 570"]
+  },
+  {
+    "course_id": "IMT 574",
+    "course_title": "Data Science II: Machine Learning",
+    "credits": "4",
+    "description": "Provides theoretical and practical introduction to modern techniques for the analysis of large-scale, heterogeneous data. Covers key concepts in inferential statistics, supervised and unsupervised machine learning, and network analysis. Students learn functional, procedural, and statistical programming techniques for working with real-world data. Prerequisite: IMT 573.",
+    "course_type": "Specialization",
+    "specialization": ["DS"],
+    "prerequisites": ["IMT 573"]
+  },
+  {
+    "course_id": "IMT 575",
+    "course_title": "Data Science III: Scaling, Applications, and Ethics",
+    "credits": "4",
+    "description": "Challenges and opportunities of data science at massive scale. Covers systems and languages for manipulating data across hundreds of computers, tools and techniques for building large-scale neural models for text and images, and the impact on privacy and equity as these large-scale models proliferate. Prerequisite: IMT 574.",
+    "course_type": "Specialization",
+    "specialization": ["DS"],
+    "prerequisites": ["IMT 574"]
+  },
+  {
+    "course_id": "IMT 576",
+    "course_title": "Foundations of Strategic and Managerial Business Intelligence",
+    "credits": "4",
+    "description": "Provides a broad overview of business intelligence (BI) including foundational BI concepts, strategies, techniques, and technologies. Primary emphasis is on the strategic and managerial perspective, focusing on how one designs, implements, and leverages business intelligence systems and strategies in management and leadership roles.",
+    "course_type": "Specialization",
+    "specialization": ["BI"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 577",
+    "course_title": "Business Intelligence Systems",
+    "credits": "4",
+    "description": "Introduces fundamentals of how to architect and develop business intelligence systems for decision making. Topics include dimensional data modeling; extracting, transforming, and loading data (ETL); online analytical processing (OLAP); data warehouse architecture; developing data visualizations to answer key business questions. Prerequisite: IMT 576; recommended: students are expected to have basic relational database and SQL knowledge. IMT 543 is recommended for students without this knowledge.",
+    "course_type": "Specialization",
+    "specialization": ["BI"],
+    "prerequisites": ["IMT 576"]
+  },
+  {
+    "course_id": "IMT 578",
+    "course_title": "Research Seminar",
+    "credits": "1-4, max. 10",
+    "description": "Students work in teams under the supervision of individual faculty members to engage in research or design activities and learn through hands-on participation and study. Learning activities include data collection, data analysis, building prototypes, testing or evaluation, or dissemination activities. Course equivalent to: LIS 578.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 579",
+    "course_title": "People Analytics",
+    "credits": "4",
+    "description": "Introduces techniques used in people analytics to measure, analyze, make data-informed decisions, and build technology systems that leverage people data. Exposes students to the people analytics technology market and builds analytical thinking skills.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 580",
+    "course_title": "Management and Strategic Leadership",
+    "credits": "4",
+    "description": "Introduction to strategic leadership of information organizations. Examines key topics drawn from organizational theory and behavior, including planning and decision-making, organizational structure, leadership, and diversity and equity. Presents the opportunity to develop and broaden understanding of strategic and operational impact of technology on organizations and their management.",
+    "course_type": "Core",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 583",
+    "course_title": "Project Management for Information Systems",
+    "credits": "4",
+    "description": "Develops competencies in planning, executing, and delivering information management projects. Covers project initiation, scope management, scheduling, resource allocation, risk management, and stakeholder communication. Explores waterfall and agile methodologies, project management tools, and AI-augmented project practices. Uses a combination of class discussions, class activities, case studies, and project work.",
+    "course_type": "Specialization",
+    "specialization": ["PPMC"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 584",
+    "course_title": "Product Management for Information Systems",
+    "credits": "4",
+    "description": "Develops strategic competencies in product discovery, definition and launch of information-intensive products and services. Covers customer research, competitive analysis, product roadmaps, minimum viable product development and go-to-market planning. Emphasizes AI product considerations, data product strategy and leveraging information for competitive advantage. Students develop a portfolio-ready product strategy through a quarter-long project.",
+    "course_type": "Specialization",
+    "specialization": ["PPMC"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 585",
+    "course_title": "Program Management and Consulting",
+    "credits": "4",
+    "description": "Provides overview of skills, practices, and concepts foundational to a career in information management consulting. Topics include consulting concepts, methodologies, approaches to consultative analysis and problem solving, effective technical and interpersonal consulting behaviors, and program management in a consulting environment. Emphasizes interpersonal/communication skills, client relationship management, and change management. Prerequisite: IMT 580.",
+    "course_type": "Specialization",
+    "specialization": ["PPMC"],
+    "prerequisites": ["IMT 580"]
+  },
+  {
+    "course_id": "IMT 587",
+    "course_title": "Principles of Information Project Management",
+    "credits": "4",
+    "description": "Introduces project management principles within information-related business contexts. Provides knowledge that managers need to implement information systems on time and within budget. Concentrates on methods and issues in organizing, planning, and controlling projects, and their use of computer-based project management tools.",
+    "course_type": "Specialization",
+    "specialization": ["PPMC"],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 590",
+    "course_title": "Internship in Information Management",
+    "credits": "1-5, max. 10",
+    "description": "Internship in the private or public sector, jointly supervised by faculty member and an on-site work sponsor. Prerequisite: enrollment in the MSIM program. Credit/no-credit only.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 591",
+    "course_title": "Reading Seminar in Information Leadership",
+    "credits": "2, max. 4",
+    "description": "Interactive seminar. Explores a foundational text on information, leadership, organizations, and/or society. Students analyze the text, engage in discussions, and develop practical leadership skills. Topics/selected texts vary. Credit/no-credit only.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 596",
+    "course_title": "Capstone II - Project Planning",
+    "credits": "2",
+    "description": "Analysis and preliminary design of an approved individual or group research or implementation project demonstrating professional-level knowledge and skills. Course overlaps with: LIS 596. Prerequisite: IMT 569. Credit/no-credit only.",
+    "course_type": "Culminating Experience",
+    "specialization": [],
+    "prerequisites": ["IMT 569"]
+  },
+  {
+    "course_id": "IMT 597",
+    "course_title": "Capstone III - Project Implementation",
+    "credits": "2",
+    "description": "Implementation of a project demonstrating professional-level knowledge and skills based on a project charter and plan developed in IMT 596. Course overlaps with: LIS 597. Prerequisite: IMT 596. Credit/no-credit only.",
+    "course_type": "Culminating Experience",
+    "specialization": [],
+    "prerequisites": ["IMT 596"]
+  },
+  {
+    "course_id": "IMT 598",
+    "course_title": "Special Topics in Information Management",
+    "credits": "1-4, max. 18",
+    "description": "Special study and research in topics of current concern to faculty and students.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  },
+  {
+    "course_id": "IMT 599",
+    "course_title": "Practicum in Information Management",
+    "credits": "6",
+    "description": "Internship, organization- or faculty-sponsored research project related to information management. Required for MSIM one-year students. Usually offered summer quarter. Prerequisite: IMT 500; IMT 550; IMT 570; and IMT 580. Credit/no-credit only.",
+    "course_type": "Culminating Experience",
+    "specialization": [],
+    "prerequisites": ["IMT 500", "IMT 550", "IMT 570", "IMT 580"]
+  },
+  {
+    "course_id": "IMT 600",
+    "course_title": "Independent Study or Research in Information Management",
+    "credits": "[1-4]-",
+    "description": "Supervised independent study or research. May be taken in as many as six consecutive quarters. Prerequisite: enrollment in the MSIM program. Credit/no-credit only.",
+    "course_type": "Elective",
+    "specialization": [],
+    "prerequisites": []
+  }
+]
