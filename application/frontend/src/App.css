@@ -223,6 +223,17 @@ body {
   padding: 14px 14px 12px;
 }
 
+.search-results__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-results__item:hover {
+  border-color: var(--color-ink-tertiary);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
 .search-results__title {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +272,208 @@ body {
   line-height: 1.5;
   color: var(--color-heading);
   margin-top: 10px;
+}
+
+/* Course page (Figma: node 5:2) */
+.course-page {
+  flex: 1;
+  width: 100%;
+}
+
+.course-page__top {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 34px 57px 0;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0a0a0a;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.3125px;
+}
+
+.back-link:hover {
+  opacity: 0.75;
+}
+
+.back-link__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.course-page__content {
+  max-width: 1203px;
+  margin: 0 auto;
+  padding: 118px 24px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.course-page__status {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-subtitle);
+}
+
+.course-page__status--error {
+  color: #9c2a2a;
+}
+
+.course-hero__type {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2.4px;
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+.course-hero__titleRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.course-hero__title {
+  font-family: var(--font-serif);
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: normal;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1504px;
+  color: #364153;
+}
+
+.pill--ink {
+  background: var(--color-ink-ghost);
+}
+
+.pill--soft {
+  background: #f3f4f6;
+}
+
+.info-card {
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 24px 32px;
+}
+
+.info-card__kicker {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--color-ink-tertiary);
+}
+
+.info-card__body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: -0.4395px;
+  color: #2c2520;
+  margin-top: 20px;
+}
+
+.info-card__divider {
+  margin: 20px 0;
+  border-top: 1px solid rgba(196, 184, 170, 0.8);
+}
+
+.info-card__row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+
+.info-card__label {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.3125px;
+  color: var(--color-ink-tertiary);
+}
+
+.section-heading__title {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: normal;
+}
+
+.section-heading__subtitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: normal;
+  margin-top: 6px;
+}
+
+.section-heading--spaced {
+  margin-top: 20px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card {
+  width: min(1141px, 100%);
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 33px;
+}
+
+.review-card__kicker {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--color-ink-tertiary);
+}
+
+.review-card__text {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 29.25px;
+  letter-spacing: -0.4395px;
+  color: #2c2520;
+  margin-top: 24px;
+  max-width: 696px;
 }
 
 @media (max-width: 768px) {
