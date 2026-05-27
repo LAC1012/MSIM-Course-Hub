@@ -91,8 +91,20 @@ def _matches_course(course: Dict[str, Any], reviews: List[Dict[str, Any]], q: st
 def create_app() -> Flask:
     app = Flask(__name__)
 
-    # Allow local Vite dev server to call the API.
-    CORS(app, resources={r"/api/*": {"origins": ["http://localhost:5173", "http://127.0.0.1:5173"]}})
+    # Allow local Vite dev server to call the API (any localhost port).
+    CORS(
+        app,
+        resources={
+            r"/api/*": {
+                "origins": [
+                    "http://localhost:5173",
+                    "http://127.0.0.1:5173",
+                    "http://localhost:5174",
+                    "http://127.0.0.1:5174",
+                ]
+            }
+        },
+    )
 
     app.config["DATA"] = load_data()
 

@@ -443,6 +443,67 @@ body {
   margin-top: 20px;
 }
 
+.info-card__muted {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-subtitle);
+}
+
+/* Course statistics charts (Figma: node 5:2) */
+.course-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.chart-card {
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 24px 28px 20px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card__header {
+  margin-bottom: 8px;
+}
+
+.chart-card__title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: 1.2;
+}
+
+.chart-card__subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-subtitle);
+  margin-top: 6px;
+}
+
+.chart-card__body {
+  flex: 1;
+  min-height: 0;
+}
+
+.chart-card__empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-subtitle);
+  text-align: center;
+  padding: 24px;
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -494,6 +555,14 @@ body {
 
   .search-bar {
     padding-right: 20px;
+  }
+
+  .course-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .course-hero__title {
+    font-size: 36px;
   }
 }
 

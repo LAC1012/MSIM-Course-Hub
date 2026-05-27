@@ -9,4 +9,5 @@ application/backend/.venv/
 application/frontend/node_modules/
 application/frontend/dist/
 application/frontend/.vite/
+application/frontend/.env
 

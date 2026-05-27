@@ -1,8 +1,10 @@
 import type { CourseDetailResponse, SearchResult } from "./types";
 
 export function getApiBase(): string {
-  return (import.meta as { env?: Record<string, string | undefined> }).env
-    ?.VITE_API_BASE ?? "http://localhost:5050";
+  const base = import.meta.env.VITE_API_BASE;
+  // Empty = same origin (Vite dev proxy → Flask on :5000). Set VITE_API_BASE for a direct URL.
+  if (base === undefined || base === "") return "";
+  return base.replace(/\/$/, "");
 }
 
 export async function searchCourses(

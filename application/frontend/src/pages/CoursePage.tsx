@@ -1,7 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import CourseStatsSection from "../components/CourseStatsSection";
 import SiteHeader from "../components/SiteHeader";
 import { fetchCourseDetail } from "../lib/api";
+import {
+  SURVEY_CAREER_KEY,
+  SURVEY_REVIEW_TEXT_KEY,
+} from "../lib/surveyFields";
 import type { CourseDetailResponse, Review } from "../lib/types";
 
 export default function CoursePage() {
@@ -32,6 +37,7 @@ export default function CoursePage() {
 
   const course = data?.course;
   const reviews = data?.reviews ?? [];
+  const peerReviews = useMemo(() => filterPeerReviews(reviews), [reviews]);
 
   return (
     <div className="page">
@@ -74,31 +80,40 @@ export default function CoursePage() {
 
                 <div className="info-card__row">
                   <p className="info-card__label">Relevant careers:</p>
-                  {topCareerTags(reviews).map((c) => (
-                    <span key={c} className="pill pill--soft">
-                      {c}
-                    </span>
-                  ))}
+                  {topCareerTags(reviews).length > 0 ? (
+                    topCareerTags(reviews).map((c) => (
+                      <span key={c} className="pill pill--soft">
+                        {c}
+                      </span>
+                    ))
+                  ) : (
+                    <span className="info-card__muted">No career data yet</span>
+                  )}
                 </div>
               </section>
 
               <section className="section-heading">
                 <h2 className="section-heading__title">Course Statistics</h2>
                 <p className="section-heading__subtitle">
-                  This data is based on what students have reported based on their experience taking this class.
+                  This data is based on what students have reported based on their experience taking
+                  this class.
                 </p>
               </section>
 
-              {/* Charts + peer reviews added next */}
+              <CourseStatsSection reviews={reviews} />
 
               <section className="section-heading section-heading--spaced">
                 <h2 className="section-heading__title">Peer Reviews</h2>
+                <p className="section-heading__subtitle">
+                  {peerReviews.length > 0
+                    ? `${peerReviews.length} review${peerReviews.length === 1 ? "" : "s"} for this course`
+                    : "No written peer reviews yet for this course."}
+                </p>
               </section>
 
               <div className="reviews">
-                {reviews.length === 0 ? <p className="course-page__status">No peer reviews yet.</p> : null}
-                {reviews.slice(0, 5).map((r, idx) => (
-                  <ReviewCard key={idx} review={r} />
+                {peerReviews.map((r, idx) => (
+                  <ReviewCard key={`${r.Timestamp ?? idx}-${idx}`} review={r} />
                 ))}
               </div>
             </>
@@ -109,24 +124,29 @@ export default function CoursePage() {
   );
 }
 
+function filterPeerReviews(reviews: Review[]): Review[] {
+  return reviews.filter((r) => {
+    const text = String(r[SURVEY_REVIEW_TEXT_KEY] ?? "").trim();
+    if (!text) return false;
+    if (/^n\/?a$/i.test(text)) return false;
+    return true;
+  });
+}
+
 function ReviewCard({ review }: { review: Review }) {
   const timestamp = (review["Timestamp"] as string | undefined) ?? "";
   const month = formatMonthLabel(timestamp);
-  const text =
-    (review[
-      "Please provide additional insights about course content, professor, career relevance, or anything else you think is helpful for other students who are considering taking this class (write N/A if you have nothing else to share)"
-    ] as string | undefined) ?? "";
+  const text = String(review[SURVEY_REVIEW_TEXT_KEY] ?? "").trim();
 
   return (
     <article className="review-card">
       <p className="review-card__kicker">{month}</p>
-      <p className="review-card__text">{text || "N/A"}</p>
+      <p className="review-card__text">{text}</p>
     </article>
   );
 }
 
 function formatMonthLabel(ts: string): string {
-  // Survey timestamps look like "5/17/2026 11:43:00"
   const m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec(ts);
   if (!m) return "Unknown date";
   const month = Number(m[1]);
@@ -149,11 +169,10 @@ function formatMonthLabel(ts: string): string {
 }
 
 function topCareerTags(reviews: Review[]): string[] {
-  const key = "What field do you want to work in?" as const;
   const counts = new Map<string, number>();
 
   for (const r of reviews) {
-    const raw = r[key] as string | undefined;
+    const raw = r[SURVEY_CAREER_KEY] as string | undefined;
     if (!raw) continue;
     const parts = raw
       .split(",")
@@ -169,4 +188,3 @@ function topCareerTags(reviews: Review[]): string[] {
     .slice(0, 4)
     .map(([name]) => name);
 }
-
