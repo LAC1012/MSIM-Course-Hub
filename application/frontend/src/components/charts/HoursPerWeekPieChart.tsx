@@ -28,7 +28,7 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
       subtitle="Student-reported time on assignments"
       isEmpty={isEmpty}
     >
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
             data={chartData}
@@ -36,7 +36,7 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
             nameKey="name"
             cx="50%"
             cy="46%"
-            outerRadius={130}
+            outerRadius={100}
             innerRadius={0}
             paddingAngle={2}
             stroke="#ffffff"

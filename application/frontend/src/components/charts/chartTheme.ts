@@ -18,8 +18,8 @@ export const HOURS_PIE_COLORS = [
 export const chartFont = '"Inter", system-ui, -apple-system, sans-serif';
 
 export const chartFontSize = {
-  tick: 28,
-  label: 26,
-  tooltip: 28,
-  legend: 28,
+  tick: 21,
+  label: 20,
+  tooltip: 21,
+  legend: 21,
 } as const;

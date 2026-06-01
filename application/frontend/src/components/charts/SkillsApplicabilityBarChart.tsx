@@ -28,7 +28,7 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
       subtitle="How applicable are the skills you learned?"
       isEmpty={isEmpty}
     >
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer width="100%" height={300}>
         <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 4 }}>
           <CartesianGrid stroke={CHART_COLORS.grid} vertical={false} />
           <XAxis
@@ -50,7 +50,7 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
             tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: chartFontSize.tick }}
             axisLine={false}
             tickLine={false}
-            width={48}
+            width={36}
           />
           <Tooltip
             formatter={(value: number) => [`${value} response${value === 1 ? "" : "s"}`, "Count"]}
