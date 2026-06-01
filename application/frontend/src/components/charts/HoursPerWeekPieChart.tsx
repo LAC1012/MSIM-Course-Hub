@@ -8,7 +8,7 @@ import {
 } from "recharts";
 import type { HoursBucket } from "../../lib/surveyStats";
 import ChartCard from "./ChartCard";
-import { chartFont, HOURS_PIE_COLORS } from "./chartTheme";
+import { chartFont, chartFontSize, HOURS_PIE_COLORS } from "./chartTheme";
 
 type HoursPerWeekPieChartProps = {
   data: HoursBucket[];
@@ -28,7 +28,7 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
       subtitle="Student-reported time on assignments"
       isEmpty={isEmpty}
     >
-      <ResponsiveContainer width="100%" height={280}>
+      <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
             data={chartData}
@@ -36,7 +36,7 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
             nameKey="name"
             cx="50%"
             cy="46%"
-            outerRadius={92}
+            outerRadius={100}
             innerRadius={0}
             paddingAngle={2}
             stroke="#ffffff"
@@ -53,7 +53,7 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
             }}
             contentStyle={{
               fontFamily: chartFont,
-              fontSize: 12,
+              fontSize: chartFontSize.tooltip,
               borderRadius: 8,
               border: "1px solid rgba(0,0,0,0.1)",
             }}
@@ -61,7 +61,11 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
           <Legend
             verticalAlign="bottom"
             iconType="circle"
-            wrapperStyle={{ fontFamily: chartFont, fontSize: 12, paddingTop: 8 }}
+            wrapperStyle={{
+              fontFamily: chartFont,
+              fontSize: chartFontSize.legend,
+              paddingTop: 8,
+            }}
           />
         </PieChart>
       </ResponsiveContainer>

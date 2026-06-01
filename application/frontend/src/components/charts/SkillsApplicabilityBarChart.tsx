@@ -9,7 +9,7 @@ import {
 } from "recharts";
 import type { SkillsRatingDatum } from "../../lib/surveyStats";
 import ChartCard from "./ChartCard";
-import { chartFont, CHART_COLORS } from "./chartTheme";
+import { chartFont, chartFontSize, CHART_COLORS } from "./chartTheme";
 
 type SkillsApplicabilityBarChartProps = {
   data: SkillsRatingDatum[];
@@ -28,12 +28,12 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
       subtitle="How applicable are the skills you learned?"
       isEmpty={isEmpty}
     >
-      <ResponsiveContainer width="100%" height={280}>
+      <ResponsiveContainer width="100%" height={300}>
         <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 4 }}>
           <CartesianGrid stroke={CHART_COLORS.grid} vertical={false} />
           <XAxis
             dataKey="rating"
-            tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: 12 }}
+            tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: chartFontSize.tick }}
             axisLine={{ stroke: CHART_COLORS.inkGhost }}
             tickLine={false}
             label={{
@@ -42,22 +42,22 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
               offset: -2,
               fill: CHART_COLORS.subtitle,
               fontFamily: chartFont,
-              fontSize: 11,
+              fontSize: chartFontSize.label,
             }}
           />
           <YAxis
             allowDecimals={false}
-            tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: 12 }}
+            tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: chartFontSize.tick }}
             axisLine={false}
             tickLine={false}
-            width={28}
+            width={36}
           />
           <Tooltip
             formatter={(value: number) => [`${value} response${value === 1 ? "" : "s"}`, "Count"]}
             labelFormatter={(label) => `Rating ${label}`}
             contentStyle={{
               fontFamily: chartFont,
-              fontSize: 12,
+              fontSize: chartFontSize.tooltip,
               borderRadius: 8,
               border: "1px solid rgba(0,0,0,0.1)",
             }}
