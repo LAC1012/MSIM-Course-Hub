@@ -62,7 +62,7 @@ body {
 }
 
 .header__logo {
-  flex: 1 1 0;
+  flex: 0 0 auto;
   min-width: 0;
   font-family: var(--font-serif);
   font-size: 18px;
@@ -78,6 +78,8 @@ body {
   gap: 18px;
   flex-shrink: 0;
   white-space: nowrap;
+  position: relative;
+  z-index: 1;
 }
 
 .header__link {
