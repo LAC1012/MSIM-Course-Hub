@@ -48,7 +48,6 @@ export default function HomePage() {
       <SiteHeader />
 
       <main className="hero">
-        <p className="hero__label">UNIVERSITY OF WASHINGTON &nbsp;•&nbsp; iSCHOOL</p>
         <h1 className="hero__title">
           What do you want to <em>learn</em>?
         </h1>

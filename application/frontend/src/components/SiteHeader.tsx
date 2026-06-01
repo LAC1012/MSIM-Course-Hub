@@ -8,6 +8,7 @@ export default function SiteHeader() {
     <header className="header">
       <div className="header__inner" aria-label="Header">
         <p className="header__logo">MSIM Course Hub</p>
+        <p className="header__tagline">UNIVERSITY OF WASHINGTON &nbsp;•&nbsp; iSCHOOL</p>
         <nav className="header__nav" aria-label="Main">
           <Link to="/" className="header__link">
             Home
