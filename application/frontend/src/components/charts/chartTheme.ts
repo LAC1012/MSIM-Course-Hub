@@ -16,3 +16,10 @@ export const HOURS_PIE_COLORS = [
 ];
 
 export const chartFont = '"Inter", system-ui, -apple-system, sans-serif';
+
+export const chartFontSize = {
+  tick: 14,
+  label: 13,
+  tooltip: 14,
+  legend: 14,
+} as const;
