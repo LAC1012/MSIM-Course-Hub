@@ -20,22 +20,22 @@
   --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 
-  /* Typography scale (increased for readability) */
-  --text-xs: 14px;
-  --text-sm: 16px;
-  --text-base: 18px;
-  --text-md: 20px;
-  --text-lg: 22px;
-  --text-xl: 28px;
-  --text-2xl: 44px;
-  --text-3xl: 52px;
-  --text-4xl: 54px;
-  --line-body: 1.55;
-  --line-tight: 1.35;
+  /* Typography scale (2× readable base) */
+  --text-xs: 28px;
+  --text-sm: 32px;
+  --text-base: 36px;
+  --text-md: 40px;
+  --text-lg: 44px;
+  --text-xl: 56px;
+  --text-2xl: 88px;
+  --text-3xl: 104px;
+  --text-4xl: 108px;
+  --line-body: 1.5;
+  --line-tight: 1.25;
 
   --header-padding-x: 82px;
-  --search-width: 654px;
-  --search-height: 68px;
+  --search-width: min(1200px, 100%);
+  --search-height: 120px;
 }
 
 html,
@@ -150,7 +150,7 @@ body {
   font-weight: 400;
   line-height: var(--line-tight);
   color: var(--color-heading);
-  white-space: nowrap;
+  white-space: normal;
   margin-bottom: 33px;
 }
 
@@ -182,8 +182,8 @@ body {
 
 .search-bar__icon {
   flex-shrink: 0;
-  width: 16px;
-  height: 16px;
+  width: 28px;
+  height: 28px;
 }
 
 .search-bar__input {
@@ -375,8 +375,8 @@ body {
 .pill {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  padding: 6px 14px;
+  min-height: 56px;
+  padding: 10px 22px;
   border-radius: 999px;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
@@ -478,8 +478,8 @@ body {
   background: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 24px;
-  padding: 24px 28px 20px;
-  min-height: 360px;
+  padding: 32px 36px 28px;
+  min-height: 520px;
   display: flex;
   flex-direction: column;
 }
@@ -566,7 +566,7 @@ body {
   }
 
   .hero__title {
-    font-size: 40px;
+    font-size: 64px;
     white-space: normal;
   }
 
@@ -579,11 +579,11 @@ body {
   }
 
   .course-hero__title {
-    font-size: 40px;
+    font-size: 64px;
   }
 
   .section-heading__title {
-    font-size: 36px;
+    font-size: 56px;
   }
 }
 
