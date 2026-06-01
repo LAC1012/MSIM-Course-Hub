@@ -34,8 +34,7 @@
   --line-tight: 1.3;
 
   --header-padding-x: 82px;
-  --search-width: min(980px, 100%);
-  --search-height: 90px;
+  --search-width: min(654px, 100%);
 }
 
 html,
@@ -174,19 +173,19 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: min(var(--search-width), 100%);
-  height: var(--search-height);
-  padding: 19px 83px 18px 15px;
+  min-height: 52px;
+  padding: 10px 16px;
   background-color: var(--color-white);
   border: 1px solid var(--color-ink-tertiary);
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .search-bar__icon {
   flex-shrink: 0;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 }
 
 .search-bar__input {
@@ -213,7 +212,7 @@ body {
 
 .search-results {
   width: min(var(--search-width), 100%);
-  margin-top: 18px;
+  margin-top: 14px;
   text-align: left;
 }
 
@@ -584,10 +583,6 @@ body {
   .hero__title {
     font-size: 48px;
     white-space: normal;
-  }
-
-  .search-bar {
-    padding-right: 20px;
   }
 
   .course-stats {
