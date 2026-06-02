@@ -4,7 +4,6 @@ import {
   Pie,
   PieChart,
   ResponsiveContainer,
-  Tooltip,
 } from "recharts";
 import type { HoursBucket } from "../../lib/surveyStats";
 import ChartCard from "./ChartCard";
@@ -41,23 +40,13 @@ export default function HoursPerWeekPieChart({ data }: HoursPerWeekPieChartProps
             paddingAngle={2}
             stroke="#ffffff"
             strokeWidth={2}
+            isAnimationActive={false}
+            activeShape={undefined}
           >
             {chartData.map((_, index) => (
               <Cell key={index} fill={HOURS_PIE_COLORS[index % HOURS_PIE_COLORS.length]} />
             ))}
           </Pie>
-          <Tooltip
-            formatter={(value: number, _name: string, item) => {
-              const pct = total > 0 ? Math.round((value / total) * 100) : 0;
-              return [`${value} (${pct}%)`, item.payload?.name ?? "Responses"];
-            }}
-            contentStyle={{
-              fontFamily: chartFont,
-              fontSize: chartFontSize.tooltip,
-              borderRadius: 8,
-              border: "1px solid rgba(0,0,0,0.1)",
-            }}
-          />
           <Legend
             verticalAlign="bottom"
             iconType="circle"

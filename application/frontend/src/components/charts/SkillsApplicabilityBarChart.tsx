@@ -3,7 +3,6 @@ import {
   BarChart,
   CartesianGrid,
   ResponsiveContainer,
-  Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
@@ -29,21 +28,13 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
       isEmpty={isEmpty}
     >
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 4 }}>
+        <BarChart data={chartData} margin={{ top: 12, right: 8, left: 0, bottom: 4 }} cursor={false}>
           <CartesianGrid stroke={CHART_COLORS.grid} vertical={false} />
           <XAxis
             dataKey="rating"
             tick={{ fill: CHART_COLORS.heading, fontFamily: chartFont, fontSize: chartFontSize.tick }}
             axisLine={{ stroke: CHART_COLORS.inkGhost }}
             tickLine={false}
-            label={{
-              value: "Rating",
-              position: "insideBottom",
-              offset: -2,
-              fill: CHART_COLORS.subtitle,
-              fontFamily: chartFont,
-              fontSize: chartFontSize.label,
-            }}
           />
           <YAxis
             allowDecimals={false}
@@ -52,17 +43,7 @@ export default function SkillsApplicabilityBarChart({ data }: SkillsApplicabilit
             tickLine={false}
             width={36}
           />
-          <Tooltip
-            formatter={(value: number) => [`${value} response${value === 1 ? "" : "s"}`, "Count"]}
-            labelFormatter={(label) => `Rating ${label}`}
-            contentStyle={{
-              fontFamily: chartFont,
-              fontSize: chartFontSize.tooltip,
-              borderRadius: 8,
-              border: "1px solid rgba(0,0,0,0.1)",
-            }}
-          />
-          <Bar dataKey="count" fill={CHART_COLORS.gold} radius={[6, 6, 0, 0]} maxBarSize={48} />
+          <Bar dataKey="count" fill={CHART_COLORS.gold} radius={[6, 6, 0, 0]} maxBarSize={48} isAnimationActive={false} />
         </BarChart>
       </ResponsiveContainer>
     </ChartCard>
