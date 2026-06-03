@@ -73,7 +73,7 @@ It is intended to be:
 | JSON load success | Backend loads both JSON files at startup | Run app + observe logs + `GET /api/health` | App starts; health shows expected counts |
 | Course ID uniqueness | Ensure `course_id` keys are unique | Script/unit test (planned) | No duplicates or duplicates are explicitly handled |
 | Review course ID extraction | Extract `IMT 542` from survey strings | Unit test | Correct parsing for common formats |
-| Missing fields tolerance | Survey rows missing professor/insights | Unit test | Search does not error; records are skipped or treated as empty strings |
+| Missing fields tolerance | Survey rows missing additional insights | Unit test | Search does not error if there is missing data; displays any available data |
 
 ---
 
